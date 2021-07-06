@@ -1,0 +1,173 @@
+//functionality for section-sidebar
+// .menu-click:checked + .section-sidebar{
+//  height: 100vh; 
+//  position: fixed;
+//  background-color: #fefefe;
+//  align-items: stretch;
+//  overflow: auto;
+//  width: 100%;
+// }
+
+.section {
+
+   &-sidebar {
+    // background-color: seagreen;
+    grid-column: sidebar-start / sidebar-end;
+    grid-row: 1 / span 5;
+    // padding: 2.8rem 3.7rem 3.7rem 3.7rem;
+    padding-top: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+    
+    @media only screen and (max-width: $bp-lg) {
+      // flex-direction: row;
+      // position: fixed;
+      grid-column: full-start/ full-end;
+      grid-row: 1/2;
+      padding: 2.7rem 2rem;
+      border-bottom: $line-style-1;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 7.2rem;
+      background-color: white;
+      transition: all .8s;
+      backface-visibility: hidden;
+
+      &--show{
+        height: 100vh; 
+        position: fixed;
+        background-color: #fefefe;
+        align-items: stretch;
+        overflow: auto;
+        width: 100%;
+      }
+    }
+    @media only screen and (max-width: $bp-md) {
+      padding: 1.7rem 2rem;
+    }
+    
+  }
+
+  &-profile {
+    // background-color: slategray;
+    grid-column: profile-start/ profile-end;
+    grid-row: 1 / span 5;
+    padding-top: 9rem;
+
+    @media only screen and (max-width: $bp-lg) {
+      grid-column: col-start 1/ col-end 4;
+      grid-row: 3/4;
+      padding-top: 0rem;
+    }
+  }
+
+  &-title {
+    padding-top: 7.2rem;
+    padding-bottom: 2.8rem;
+    // background-color: cadetblue;
+    grid-column: col-start 1 / col-end 4;
+
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 2/3;
+      grid-column: full-start/ full-end;
+      // border-bottom: $line-style-1;
+      padding: 0rem 2rem 1.8rem 2.4rem;
+      margin-top: 7.2rem;
+    }
+  }
+
+  &-info {
+    // background-color: salmon;
+    grid-column: col-start 1 / col-end 4;
+    padding-bottom: 2.8rem;
+    padding-right: 2rem;
+    border-bottom: $line-style-1;
+    
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 4/5;
+    }
+    @media only screen and (max-width:$bp-md){
+      padding:0rem 2rem 2.8rem 2rem;
+      grid-column: full-start/ full-end;
+    }
+  }
+
+  &-form {
+    // background-color: $color-secondary-light;
+    grid-column: col-start 1 / col-end 4;
+    // padding-top: 2rem;
+    // padding-bottom: 2rem;
+    padding:2rem 0 2rem 0;
+    border-bottom: $line-style-1;
+
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 5/6;
+    }
+
+    @media only screen and (max-width:$bp-md){
+      // padding-right: 0;
+      grid-column: full-start / full-end;
+      padding:2rem 2rem 4.5rem 2rem;
+    }
+  }
+
+  &-share {
+    // background-color: $color-primary;
+    grid-column: col-start 1 / col-end 4;
+    padding: 0rem 5rem 2rem 1rem;
+    border-bottom: $line-style-1;
+
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 6/7;
+    }
+
+    @media only screen and (max-width: $bp-md){
+      grid-column: full-start / full-end;
+      padding: 0rem 2rem 3rem 2rem;
+    }
+  }
+
+  &-upload {
+    // background-color: $color-secondary;
+    grid-column: col-start 1 / col-end 4;
+    padding: 0rem 0 2rem 1rem;
+    border-bottom: $line-style-1;
+
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 7/8;
+    }
+
+    @media only screen and (max-width: $bp-md){
+      grid-column: full-start / full-end;
+      padding: 0.1rem 2rem 3.5rem 2rem;
+      // border-bottom: $line-style-1;
+    }
+  }
+
+  &-portfolio {
+    // background-color: lightseagreen;
+    // justify-items: start;
+    grid-column: col-start 1 / col-end 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 3rem;
+    padding-bottom: 11rem;
+
+    @media only screen and (max-width:$bp-lg){
+      grid-row: 8/9;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      padding: 0.7rem 2rem 3.5rem 2rem;
+      grid-column: full-start / full-end;
+    }
+
+    a {
+      justify-self: end;
+    }
+  }
+}

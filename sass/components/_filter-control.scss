@@ -1,0 +1,10 @@
+.filter-control{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // justify-items: start;
+    align-items: center;
+
+    // a{
+    //     justify-self: start;
+    // }
+}

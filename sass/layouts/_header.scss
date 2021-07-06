@@ -1,0 +1,54 @@
+
+//functionality for header
+
+// .menu-click:checked + .section-sidebar .header .header__burger-menu {
+//   background-color: transparent;
+
+//   &::before {
+//     transform: rotate(135deg);
+//   }
+//   &::after {
+//     transform: rotate(-135deg);
+//   }
+// }
+
+.menu-click:checked + .section-sidebar .header{
+    margin-bottom: 2rem ;
+}
+
+.header {
+  margin-bottom: 4.2rem ;
+  @media only screen and (max-width: $bp-lg) {
+    margin-bottom: 0 ;
+    width: 100%;
+    // height: 7.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0 2rem;
+  }
+
+  &__bg-menu {
+    @media only screen and (max-width: $bp-lg) {
+      display: block;
+    }
+  }
+
+  &__logo {
+    height: 3.9rem;
+    width: 15.8rem;
+    z-index: 1000;
+  }
+
+  &__burger-menu {
+    display: none;
+    @media only screen and (max-width: $bp-lg) {
+      display: block;
+    }
+
+  }
+
+}
+
+
+

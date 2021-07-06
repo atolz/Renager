@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Beautifull family house",
+    "location": "Ibeju Lekki",
+    "price": "7,990,000",
+    "cord": [6.496267, 3.596457],
+    "imgs": [
+      "house-lekki.jpg",
+      "house-3.jpeg",
+      "house-4.jpeg",
+      "house-ikoyi.jpg"
+    ],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Private Room in 4 bedroom house",
+    "location": "Banana Island",
+    "price": "600,999",
+    "cord": [6.462927, 3.456788],
+    "imgs": ["house-banana.jpg", "house-3.jpeg", "house-4.jpeg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Modern family apartment",
+    "location": "Ikoyi",
+    "price": "5,330,874",
+    "cord": [6.451222, 3.428507],
+    "imgs": [
+      "house-ikoyi.jpg",
+      "house-3.jpeg",
+      "house-4.jpeg",
+      "house-ikoyi.jpg"
+    ],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Large Rustic Villa",
+    "location": "Ibeju Lekki",
+    "price": "2,700,999",
+    "cord": [6.454996, 3.579268],
+    "imgs": [
+      "house-lekki.jpg",
+      "house-3.jpeg",
+      "house-4.jpeg"
+    ],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "7 Bedroom Detached Duplex with Penthouse",
+    "location": "Maitama Abuja",
+    "price": "9,500,000",
+    "cord": [9.088196, 7.493382],
+    "imgs": ["house-7.jpg", "house-3.jpeg", "house-4.jpeg", "house-ikoyi.jpg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Modern family apartment",
+    "location": "Gwarinpa, Abuja",
+    "price": "5,330,874",
+    "cord": [9.062503, 7.468820],
+    "imgs": [
+      "house-ikoyi.jpg",
+      "house-3.jpeg",
+      "house-4.jpeg",
+      "house-ikoyi.jpg"
+    ],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Beautifull family house",
+    "location": "Ibeju Lekki",
+    "price": "7,990,000",
+    "cord": [8.494359, 4.554005],
+    "imgs": [
+      "house-lekki.jpg",
+      "house-3.jpeg",
+      "house-4.jpeg",
+      "house-ikoyi.jpg"
+    ],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "Large Rustic Villa",
+    "location": "Golf Estate, Rivers",
+    "price": "10,990,000",
+    "cord": [4.810021, 7.041678],
+    "imgs": ["house-8.jpg", "house-3.jpeg", "house-4.jpeg", "house-ikoyi.jpg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "5 Bedroom Detached Duplex House For Sale",
+    "location": "Jabi, Abuja",
+    "price": "6,990,000",
+    "cord": [10.610616, 7.370818],
+    "imgs": ["house-8.jpg", "house-3.jpeg", "house-4.jpeg", "house-ikoyi.jpg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "2 Bedroom Detached House For Sale",
+    "location": "Banana Island",
+    "price": "20,990,000",
+    "cord": [6.465752, 3.449686],
+    "imgs": ["house-8.jpg", "house-3.jpeg", "house-4.jpeg", "house-ikoyi.jpg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  },
+  {
+    "name": "4 Bedroom Detached Duplex with Penthouse",
+    "location": "Banana Island",
+    "price": "10,990,000",
+    "cord": [6.460763, 3.458869],
+    "imgs": [ "house-ikoyi.jpg","house-8.jpg", "house-3.jpeg", "house-4.jpeg"],
+    "type": ["For sale", "Land"],
+    "rooms": ["3 Bedrooms", "3 Bathrooms"]
+  }
+]

@@ -1,0 +1,100 @@
+$color-primary: #4B5FFA;
+$color-primary-light: #EBF0FF;
+
+$color-secondary: #17294D;
+$color-secondary-light: #455980;
+
+$color-grey-light-1: #C8CAD4;
+$color-grey-light-2: #AFAFAF;
+$color-grey-light-3: #F4F4F4;
+
+$color-error: #F80E0E;
+
+$font-primary: 'Mulish', sans-serif;;
+$font-secondary: "Butler", sans-serif;
+
+$line-style-1: 1px solid $color-primary-light; 
+$line-style-2:  0.5px solid rgba(0, 0, 0, 0.2);
+$line-style-3:  1px solid $color-grey-light-3;
+
+$letter-spacing:-0.54px;
+
+//shadow
+$box-shadow-bluish: 0px 0px 4px rgba(0, 0, 0, 0.25);
+$box-shadow-dark: 0px 5px 10px rgba(128, 128, 128, 0.15);
+
+//break points
+
+$bp-lg: 76.875em; //1250px
+$bp-slg: 43.125em; //690px for form
+$bp-md: 29.375em; //470px
+$bp-lg-1: 95.375em; //1526px
+$bp-lg-2: 88.75em; //1420px
+$bp-lg-3: 79.37em; //1270px
+$bp-grid: 71.875em; //1150px//also search-section//
+$bp-header-main: 56.25em; //900px//
+$bp-map: 50em; //800px//map
+$bp-save: 42.5em;
+$bp-searchbar: 32.81em;
+$bp-phone: 26.56em;
+$bp-phone-2: 24.37em;
+
+//property height breakpoints
+$bp-prop-height: 107.8125em;//1725//15vw
+$bp-prop-height-2: 73.875em;//1182//29vw
+$bp-prop-height-3: 40.75em;//652//58vw
+// $bp-prop-height: 38.25em;//612px //58vw
+// $bp-prop-height: 38.25em;//612px //58vw
+// $bp-prop-height-2: 73.875em;//1182px //31vw
+
+$bp-more-popup: 36.6875em; //587px //more-popup
+
+
+::selection{
+    // background-color: $color-primary;
+    // color: $color-primary-light;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    @media only screen and (max-width: $bp-md){
+        font-size: 61.5%;
+    }
+}
+
+body{
+    font-family: $font-primary;
+    line-height: 2.4rem;
+    color: $color-secondary;
+    font-weight: 700;
+}
+
+.container{
+    position: relative;
+    // background-color: $color-secondary-light;
+    display: grid;
+    grid-template-columns: 1fr [sidebar-start] max-content [sidebar-end full-start] minmax(2.4rem,7.7rem)
+    repeat(4, [col-start] minmax(2.4rem, 20rem) [col-end] ) minmax(2.4rem,9rem) [full-end profile-start] 18rem [profile-end] minmax(2rem, 1fr);
+    grid-template-rows: repeat(6, min-content);
+    grid-row-gap: 2rem;
+
+    @media only screen and (max-width: $bp-lg){
+        grid-template-columns:[full-start] minmax(2.4rem,1fr)
+        repeat(4, [col-start] minmax(1rem, 20rem) [col-end] ) minmax(2.4rem,1fr) [full-end]; 
+    }
+}
+
+.container-buy-page{
+    background-color: white;;
+    margin: 0 auto;
+    height: 100vh;
+}

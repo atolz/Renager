@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/fav1.png" />
+
+    <title>renager &mdash; your home, your freedom</title>
+  </head>
+  <body class="container">
+    <input type="checkbox" name="toggle-nav" id="menu" class="menu-click">
+    <div class="section-sidebar">
+      <header class="header mb-xlg">
+        <img src="img/logo.svg" alt="renager logo" class="header__logo" />
+
+        <label for="menu" class="header__bg-menu menu-background "><div class="header__burger-menu burger-menu"></div></label>
+      </header>
+
+      <ul class="nav mb-m">
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-dashboard-16px-1"></use>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-house-entrance-1"></use>
+            </svg>
+            <span> Switch Mode</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use
+                xlink:href="/img/sprite.svg#icon-project-home-shopping-1"
+              ></use>
+            </svg>
+            <span>Saved Properties</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-money-wallet-1"></use>
+            </svg>
+            <span>Transactions</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use
+                xlink:href="/img/sprite.svg#icon-pie-line-graph-desktop-1"
+              ></use>
+            </svg>
+            <span>Drafts</span>
+          </a>
+        </li>
+        <li class="nav__item line-grey mb-sm-1 pb-sm">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use
+                xlink:href="/img/sprite.svg#icon-pie-line-graph-desktop-1"
+              ></use>
+            </svg>
+            <span>Property Data</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__link-active">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-pencil-write-1"></use>
+            </svg>
+            <span>Edit Account</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-tags-settings-1"></use>
+            </svg>
+            <span>Referral</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link ">
+            <svg class="nav__icon">
+              <use xlink:href="./img/sprite.svg#icon-money-wallet-2"></use>
+            </svg>
+            <span>Wallet</span>
+          </a>
+        </li>
+        <li class="nav__item line-grey pb-sm">
+          <a href="index.html" class="nav__link">
+            <svg class="nav__icon">
+              <use xlink:href="/img/sprite.svg#icon-Group-431"></use>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+
+      <img
+        src="img/google-play-badge 1.svg"
+        alt="google-play-badge"
+        class="btn-download"
+      />
+    </div>
+
+    <div class="section-title">
+      <h2 class="heading-2">Service Provider</h2>
+    </div>
+
+    <div class="section-profile">
+      <div class="profile">
+        <div class="profile__picture mb-sm"><img src="./img/profile.jpg" alt="user image" class="profile__img " /></div>
+        <a href="#" class="link-1 mb-sm-1">Change profile picture</a>
+        <h3 class="heading-3">Olusesan Peter</h3>
+        <ul class="profile__list">
+          <li class="profile__item">Painter</li>
+          <li class="profile__item">Rating: 4.5</li>
+          <li class="profile__item">Lagos, Nigeria</li>
+          <li class="profile__item">CAC: RT3940209</li>
+          <li class="profile__item">Jobs completed - 115</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section-info">
+      <p class="paragraph">
+        Your Subscription will expire on 28/04/2021, after which your services
+        will no longer be visible on Renager.
+      </p>
+      <p class="paragraph paragraph-grey">
+        Choose from any of our existing subscription plans to renew before being
+        disconnected. <a href="#" class="link ml-sm">Renew</a>
+      </p>
+    </div>
+    <div class="section-form">
+      <form action="#" class="form">
+        <div class="form__group form__group-1">
+          <input
+            type="text"
+            class="form__input"
+            id="address"
+            placeholder="Address"
+            required
+          />
+          <label for="address" class="form__label">Address</label>
+        </div>
+        <div class="form__group form__group-2">
+          <input
+            type="text"
+            class="form__input"
+            id="city"
+            placeholder="City"
+            required
+          />
+          <label for="city" class="form__label">City</label>
+        </div>
+        <div class="form__group form__group-3">
+          <input
+            type="text"
+            class="form__input"
+            id="state"
+            placeholder="State"
+            required
+          />
+          <label for="state" class="form__label">State</label>
+        </div>
+        <div class="form__group form__group-4">
+          <input
+            type="text"
+            class="form__input"
+            id="phone"
+            placeholder="Phone number"
+            required
+          />
+          <label for="phone" class="form__label">Phone Number</label>
+        </div>
+
+        <button class="btn-primary form__group-5">Update Profile</button>
+      </form>
+    </div>
+    <div class="section-share">
+      <h4 class="heading-5 mb-xxsm">Share your URL for others to rate your services</h4>
+      <div class="share">
+        <p class="paragraph paragraph-light mb-xsm">
+          https://www.renager.com/service-provider/ olusesan-peter
+        </p>
+        <div class="ml-sm center-h-v">
+          <svg class="share__icon">
+            <use xlink:href="/img/sprite.svg#icon-copy-1"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="section-upload">
+      <h4 class="heading-5 heading-5-light mb-xxsm">Upload Pictures of your work (minimum of 6 images are required)</h4>
+      <div class="upload">
+        <input type="file" name="file" id="file" multiple >
+        <span >No files selected</span>
+        <label class="btn-upload" for="file">Choose File</label>
+      </div>
+      <span class="sm-text">Supports: JPG, JPEG2000, PNG, PDF</span>
+    </div>
+    <div class="section-portfolio">
+      <h4 class="heading-4">My Portfolio</h4>
+      <a href="#" class="link">Edit</a>
+      <div class="gallery">
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/painter-6.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/painter-4.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/painter-5.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/profile.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/house-painter 1.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__picture"><img src="/img/house painter.jpg" alt="portfolio image" class="gallery__img"></div>
+          <div class="gallery__icon-box">
+            <svg class="gallery__icon">
+              <use xlink:href="img/sprite.svg#icon-trash-2-9"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/header.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>

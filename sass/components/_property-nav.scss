@@ -1,0 +1,73 @@
+.property-nav {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  &__text {
+    margin-bottom: 3.4rem;
+    overflow: hidden;
+  }
+
+  &__propertiesContainer{
+      position: relative;
+      display: inline-block;
+      width: 4rem;
+      top: -2.2rem;
+      margin: 0 .8rem 0 .3rem;
+      transition: .2s all;
+      backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+  }
+
+  &__properties-number{
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: none;
+    stroke: $color-secondary;
+    margin: 0.1rem;
+    cursor: pointer;
+    transition: 0.2s all;
+  }
+
+  &__number {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.35rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s all;
+    
+    @media only screen and (max-width:$bp-phone-2){
+        display: grid;
+        width: 3.5rem;
+        height: 3.35rem;
+    }
+
+    &-active {
+      background-color: $color-primary-light;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.drop-down {
+  //   display: none;
+  visibility: hidden;
+  opacity: 0;
+  // // height: 0;
+  transition: all 0.4s;
+  padding: 2rem;
+  // width: 25.5rem;
+  background-color: #fff;
+  position: absolute;
+  top: 5rem;
+  z-index: 1000;
+  //   left: -100%;
+  // z-index: 100000;
+  border-radius: 0.5rem;
+  box-shadow: $box-shadow-dark;
+  border: $line-style-1;
+
+  &::before {
+    content: "";
+    border-left: $line-style-1;
+    border-top: $line-style-1;
+    // box-shadow: $box-shadow-dark;
+    width: 2.1rem;
+    height: 2.1rem;
+    display: inline-block;
+    background-color: #fff;
+    transform: translateX(-50%) rotate(45deg);
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    // z-index: -100;
+    // transform: ;
+  }
+  
+  &--type {
+    left: -100%;
+    @media only screen and (max-width: 574px) {
+      position: fixed;
+      top: 21rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1001;
+
+      &::before {
+        left: 75%;
+      }
+    }
+  }
+
+  &--bb {
+ 
+    left: -60%;
+    @media only screen and (max-width: $bp-phone-2) {
+      position: fixed;
+      top: 21rem;
+      left: 5%;
+    }
+  }
+
+  &--price {
+    left: -80%;
+
+    @media only screen and (max-width: $bp-grid) {
+      left: 0%;
+      &::before {
+        left: 10%;
+      }
+      }
+    
+    @media only screen and (max-width: $bp-phone-2) {
+      position: fixed;
+      top: 21rem;
+      left: 5%;
+
+      &::before {
+        left: 10%;
+      }
+
+    }
+
+ 
+    
+  }
+}

@@ -1,0 +1,31 @@
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 2rem;
+    letter-spacing: $letter-spacing;
+    display: inline-block;
+    color: $color-primary !important;
+
+    @media only screen and (max-width: $bp-slg){
+      display: block;
+  }
+  }
+  &-1{
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2rem;
+      // letter-spacing: -0.09rem;
+      display: inline-block;
+      color: $color-primary !important; 
+
+    
+    }
+  }
+
+}

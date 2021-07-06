@@ -1,0 +1,21 @@
+.filter-box{
+    display: inline-block;
+    padding: .7rem 3.5rem .7rem 1.5rem;
+    border: $line-style-1;
+    border-radius: 0.5rem;
+    align-items: center;
+    color: $color-grey-light-1;
+    cursor: pointer;
+    width: 12.9rem;
+    height: 3.6rem;
+    transition: .3s all;
+
+    &:hover{
+        border: 1px solid $color-primary
+    }
+
+    &--selected{
+        background-color: $color-primary-light;
+        color: $color-primary;
+    }
+}

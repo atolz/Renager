@@ -1,0 +1,110 @@
+//functionality
+// .menu-click:checked ~ .menu-background .burger-menu {
+//   background-color: transparent;
+//   // width: 0;
+//   // left: -2rem;
+//   // transform-origin: right;
+
+//   &::before {
+//     top: 0;
+//     transform: rotate(135deg);
+//     // width: 2.9rem;
+//   }
+//   &::after {
+//     top: 0;
+//     transform: rotate(-135deg);
+//     // width: 2.9rem;
+//   }
+// }
+
+.header-main {
+  // background-color: teal;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 30;
+  width: 100%;
+  height: 7.2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9.3rem;
+  align-items: center;
+  box-shadow: $box-shadow-bluish;
+
+  @media only screen and (max-width: $bp-grid){
+    padding: 0 3.3rem;
+  }
+
+  @media only screen and (max-width: $bp-header-main){
+    padding: 0 3.3rem;
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $bp-phone){
+    padding: 0 1.5rem;
+  }
+  
+  &__nav {
+    display: flex;
+    visibility: visible;
+    @media only screen and (max-width: $bp-header-main){
+      visibility: hidden;
+      opacity: 0;
+      min-height: 0px;
+      height: 0%;
+      background-color: $color-primary;
+      flex-direction: column;
+      padding: 3rem;
+      flex: 1 1 100%;
+      text-align: left;
+      position: absolute;
+      top: 7.2rem;
+      left: 0;
+      width: 100%;
+      transition: all .5s;
+    }
+  }
+
+  .link-1{
+    @media only screen and (max-width: $bp-header-main){
+      color: #fff !important;
+    }
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        font-weight: 600;
+
+        @media only screen and (max-width: $bp-header-main){
+          display: block;
+          color: #fff;
+          font-size: 1.6rem;
+          font-weight: 600;
+          &:not(:last-child) {
+            margin-bottom: 3.7rem;
+          }
+        }
+        
+    }
+
+    &:not(:last-child) {
+      margin-right: 3.7rem;
+    }
+
+  }
+
+  &__burger-menu{
+    display: none;
+
+    @media only screen and (max-width: $bp-header-main){
+      display: block;
+    }
+
+  }
+}

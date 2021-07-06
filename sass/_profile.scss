@@ -1,0 +1,36 @@
+.profile {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__picture{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__list {
+    list-style: none;
+    // padding: 0 rem;
+  }
+
+  &__item {
+    color: $color-secondary-light;
+    font-size: 1.4rem;
+    line-height: 2.9rem;
+    padding: .7rem;
+    letter-spacing: $letter-spacing;
+
+    &:not(:last-child) {
+      border-bottom: $line-style-1;
+    }
+  }
+}

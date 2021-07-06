@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYS6MrZREScPoSg2dsBRq1p8Tw8ixR3f4&sensor=false">
+   </script>    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="shortcut icon" type="image/png" href="img/fav1.png" />
+
+    <title>renager &mdash; your home, your freedom</title>
+  </head>
+  <body class="container-buy-page" id="body">
+
+  
+
+    <div class="more-popup__bg " id="popup">
+        <div class="more-popup__box">
+            <h4 class="heading-4 type-box__1">Property Type</h4>
+            <div class="filter-box"><div class="filter__text filter__text--bold">All</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">House</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Land</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Apartment</div></div>
+            <h4 class="heading-4 type-box__1">Property Type</h4>
+            <div class="filter-box"><div class="filter__text filter__text--bold">All</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">House</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Land</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Apartment</div></div>
+            <h4 class="heading-4 type-box__1">Property Type</h4>
+            <div class="filter-box"><div class="filter__text filter__text--bold">All</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">House</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Land</div></div>
+            <div class="filter-box"><div class="filter__text filter__text--bold">Apartment</div></div>
+            <h4 class="heading-4 type-box__1">Land area</h4>
+            <p class="paragraph"><span class="slider__value slider__value--min">1</span>m<sup>2</sup> - &#8358;<span class="slider__value--max">158</span>m<sup>2</sup></p>
+            <div class="slider">
+              <input type="range" name="slider-land" id="slider-min-land" class="slider__input slider__input--min" min="1" max="158" value="1" autocomplete="off">
+              <input type="range" name="slider-land" id="slider-max-land" class="slider__input slider__input--max" min="1" max="158" value="158" autocomplete="off">
+              <div class="slider__track-container"><div class="slider__track"></div></div>
+            </div>
+            <div class="filter-control">
+                <a href="#" class="control__clear link-1 type-box__2">Clear</a>
+                <!-- <h2 class="type-box__2 heading-2">Clear</h2> -->
+                <a href="#body" class="btn-primary">Done</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+      <input type="checkbox" class="menu-click" id="menu" />
+      <img src="img/logo.svg" alt="renager logo" class="header__logo" />
+      
+      <label for="menu" class="menu-background header-main__burger-menu"
+        ><div class="burger-menu"></div
+      ></label>
+
+      <nav class="header-main__nav">
+        <a href="#" class="header-main__nav-link">Buy</a>
+        <a href="#" class="header-main__nav-link">Lease</a>
+        <a href="#" class="header-main__nav-link">Rent</a>
+        <a href="#" class="header-main__nav-link">Sell</a>
+        <a href="index.html" class="header-main__nav-link">Services</a>
+        <a href="#" class="header-main__nav-link">FAQs</a>
+        <a href="#" class="header-main__nav-link link-1">Sign in</a>
+      </nav>
+
+    </header>
+    <section class="section-search">
+      <form action="#" class="search">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="/img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <input
+          type="text"
+          class="search__input"
+          placeholder="Search by name, location"
+        />
+      </form>
+
+      <label for="map" class="map">Map</label>
+
+      <div class="found">
+        <span class="found__text sm-text">We found</span> <br />
+        <div class="found__box">
+          <svg class="found__icon">
+            <use xlink:href="img/sprite.svg#icon-home"></use>
+          </svg>
+          <h4 class="heading-4">30 Properties</h4>
+        </div>
+      </div>
+      <div class="bg-white"></div>
+      <div class="filter">
+          <!-- <input type="checkbox" id="price" class="price">
+          <input type="checkbox" id="bb" class="bb">
+          <input type="checkbox" id="type" class="type"> -->
+        <label class="filter__pill ml-auto filter__price" for="price">
+          <div class="filter__text">Price</div>
+          <div class="drop-down drop-down--price">
+              <div class="price-box">
+                  <h4 class="heading-4">&#8358;<span class="slider__value slider__value--min">1</span> - &#8358;<span class="slider__value--max">10,000,000</span></h4>
+                  <div class="slider">
+                    <input type="range" name="slider" id="slider-min-price" class="slider__input slider__input--min" min="1" max="10000000" value="1" autocomplete="off">
+                    <input type="range" name="slider" id="slider-max-price" class="slider__input slider__input--max" min="1" max="10000000" value="10000000" autocomplete="off">
+                    <div class="slider__track-container"><div class="slider__track"></div></div>
+
+                    <!-- <input type="range" name="slider" id="slider-max-track" class="slider__input slider__input--max-track" min="1" max="10000000" value="10000000"> -->
+                    <!-- <input type="range" name="slider" id="slider-max" class="slider__input slider__input--max" min="1" max="10000000" value="10000000"> -->
+                  </div>
+                  <div class="filter-control mt-md">
+                    <a href="#" class="control__clear link-1 type-box__2">Clear</a>
+                    <!-- <h2 class="type-box__2 heading-2">Clear</h2> -->
+                    <button class="btn-primary">Done</button>
+                </div>
+              </div>
+          </div>
+        </label>
+        <label class="filter__pill filter__bb" for="bb">
+          <div class="filter__text">Bed and Bath</div>
+          <div class="drop-down drop-down--bb">
+            <div class="bb-box">
+                <h4 class="heading-4 bb-box__1">Bedrooms</h4>
+                <span class="property-nav__number">1</span>
+                <span class="property-nav__number">2</span>
+                <span class="property-nav__number">3</span>
+                <span class="property-nav__number">4</span>
+                <span class="property-nav__number">5+</span>
+                <h4 class="heading-4 bb-box__2">Bathrooms</h4>
+                <span class="property-nav__number">1</span>
+                <span class="property-nav__number">2</span>
+                <span class="property-nav__number">3</span>
+                <span class="property-nav__number">4</span>
+                <span class="property-nav__number">5+</span>
+                <div class="filter-control mt-md">
+                    <a href="#" class="control__clear link-1 type-box__2">Clear</a>
+                    <!-- <h2 class="type-box__2 heading-2">Clear</h2> -->
+                    <button class="btn-primary">Done</button>
+                </div>
+            </div>
+        </div>
+        </label>
+        <label class="filter__pill filter__type" for="type">
+          <div class="filter__text">Type</div>
+          <div class="drop-down drop-down--type">
+              <div class="type-box">
+                  <h4 class="heading-4 type-box__1">Property Type</h4>
+                  <div class="filter-box"><div class="filter__text filter__text--bold">All</div></div>
+                  <div class="filter-box"><div class="filter__text filter__text--bold">House</div></div>
+                  <div class="filter-box"><div class="filter__text filter__text--bold">Land</div></div>
+                  <div class="filter-box"><div class="filter__text filter__text--bold">Apartment</div></div>
+                  <div class="filter-box"><div class="filter__text filter__text--bold">Shortlet</div></div>
+                  <a href="#" class="control__clear link-1 type-box__2 mt-md">Clear</a>
+                  <!-- <h2 class="type-box__2 heading-2">Clear</h2> -->
+                  <button class="btn-primary mt-md">Done</button>
+              </div>
+          </div>
+        </label>
+
+        <div class="filter__pill filter__pill--more " >
+            <div class="filter__text">
+              More
+              <!-- <svg class="filter__icon ml-sm">
+                          <use xlink:href="img/sprite.svg#icon-filter"></use>
+                      </svg> -->
+            </div>
+            <div class="drop-down">
+              <button class="btn-primary">Done</button>
+              <a href="#" class="control__clear link-1 type-box__2">Clear</a>
+            </div>
+          </div>
+
+        <form action="#" class="save">
+          <input
+            type="checkbox"
+            name="save__checkbox"
+            class="save__checkbox mr-sm"
+            id="save"
+          />
+          <label for="save" class="filter__text">Save your search</label>
+        </form>
+      </div>
+    </section>
+
+    <!-- property__listings and map -->
+    <main class="content">
+
+      <div class="content__listings ">
+        <div class="content__view">
+          <span class="content__list-vertical"></span>
+          <span class="content__list-horizontal"></span>
+        </div>
+        <div class="content__overflow">
+
+          <div class="loader display-none">
+            <div class="loader__icon loader__icon--1">&nbsp;</div>
+            <div class="loader__icon loader__icon--2">&nbsp;</div>
+            <div class="loader__icon loader__icon--3">&nbsp;</div>
+        </div>
+
+          <div class="content__properties ">
+           
+          </div>
+          <div class="property-nav">
+            <h3 class="heading-3 property-nav__text">
+              Displaying Results
+              <div class="property-nav__propertiesContainer"> 
+                  <span class="property-nav__properties-number">1-24</span>
+                  <span class="property-nav__properties-number">25-48</span>
+                  <span class="property-nav__properties-number">49-96</span>
+                  <span class="property-nav__properties-number">97-100</span>
+                  <span class="property-nav__properties-number">101-104</span>
+                  <span class="property-nav__properties-number">105-114</span>
+                  <span class="property-nav__properties-number">115-124</span>
+              </div>of 200
+            </h3>
+            <div class="property-nav__main">
+              <svg class="property-nav__icon property-nav__icon--left invisible">
+                <use xlink:href="img/sprite.svg#icon-arr-left"></use>
+              </svg>
+              <span class="property-nav__number property-nav__number-active"
+                >1</span
+              >
+              <span class="property-nav__number">2</span>
+              <span class="property-nav__number">3</span>
+              <span class="property-nav__number">4</span>
+              <span class="property-nav__number">5</span>
+              <span class="property-nav__number">6</span>
+              <span class="property-nav__number">7</span>
+              <svg class="property-nav__icon property-nav__icon--right">
+                <use xlink:href="img/sprite.svg#icon-arr-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content__map">
+        <!-- <button class="close-map">&#x2716;</button> -->
+        <div id="map"></div>
+      </div>
+    </main>
+    <!-- end of property__listing and map -->
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__contact">
+          <h2 class="heading-2 footer__renager">renager.</h2>
+          <paragraph class="footer__address paragraph-1"
+            >Abdulsalam Close, Oladejo <br />
+            Street, Owode, Apata, Ibadan, <br />
+            Oyo State</paragraph
+          >
+          <paragraph class="footer__support paragraph-1"
+            >Support +2348148918920</paragraph
+          >
+          <div class="footer__social">
+            <svg class="footer__icon">
+              <use xlink:href="img/sprite.svg#icon-twiter"></use>
+            </svg>
+            <svg class="footer__icon">
+              <use xlink:href="img/sprite.svg#icon-linkedin"></use>
+            </svg>
+            <svg class="footer__icon">
+              <use xlink:href="img/sprite.svg#icon-instagram"></use>
+            </svg>
+            <svg class="footer__icon">
+              <use xlink:href="img/sprite.svg#icon-facebook"></use>
+            </svg>
+            <svg class="footer__icon">
+              <use xlink:href="img/sprite.svg#icon-whats-app"></use>
+            </svg>
+          </div>
+        </div>
+        <nav class="footer__info">
+          <h4 class="heading-4 mb-sm footer__heading">Company</h4>
+          <a href="#" class="footer__link">About Us</a>
+          <a href="#" class="footer__link">FAQs</a>
+          <a href="#" class="footer__link">Services</a>
+          <a href="#" class="footer__link">Privacy policy</a>
+          <a href="#" class="footer__link">Terms and condition</a>
+        </nav>
+        <nav class="footer__actions">
+          <h4 class="heading-4 mb-sm footer__heading">Search Renager.</h4>
+          <a href="#" class="footer__link">Buy</a>
+          <a href="#" class="footer__link">Lease</a>
+          <a href="#" class="footer__link">Rent</a>
+          <a href="#" class="footer__link">Sell</a>
+          <a href="#" class="footer__link">Due dilligence</a>
+        </nav>
+        <nav class="footer__more">
+          <h4 class="heading-4 mb-sm footer__heading">Services</h4>
+          <a href="#" class="footer__link">Pricing</a>
+          <a href="#" class="footer__link">Career</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Press</a>
+        </nav>
+        <div class="footer__download">
+            <a href="#" class="footer__link">Download the Renager App</a>
+          <img src="img/svg/google-play.svg" alt="renager download" class="footer__googleplay"/>
+          <img src="img/svg/app-store.svg" alt="renager download" class="footer__googleplay"/>
+        </div>
+      </div>
+      <paragraph class="footer__copyright paragraph-1"
+        >&copy; 2021 renager - All rights reserved</paragraph
+      >
+    </footer>
+
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/infobox.js"></script>
+    <script src="js/getProperties.js"></script>
+    <script src="js/header-main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/property-nav.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/scroll-doc.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

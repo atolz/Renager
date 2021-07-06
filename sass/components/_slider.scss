@@ -1,0 +1,121 @@
+.slider {
+  width: 21.5rem;
+  height: 0.5rem;
+  margin-bottom: 2.6rem;
+  position: relative;
+
+  &__input {
+    width: 100%;
+    height: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: $color-primary-light;
+    outline: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &::-webkit-slider-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 2rem;
+      height: 2.2rem;
+      background-color: $color-primary;
+      -webkit-mask-image: url(../img/SVG/slider.svg);
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      cursor: pointer;
+      position: relative;
+      top: 1.6rem;
+    }
+
+    &::-moz-range-thumb {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 2rem;
+      height: 2.2rem;
+      background-color: $color-primary;
+      -webkit-mask-image: url(../img/SVG/slider.svg);
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      cursor: pointer;
+      border: none;
+      border-radius: 0;
+      position: relative;
+      top: 1.6rem;
+    }
+
+    &--min {
+      z-index: 1;
+    }
+
+    &--max {
+      z-index: 1;
+    }
+
+    &--active {
+      &::-webkit-slider-thumb {
+        transform: scale(1.1);
+        outline: 2px solid red;
+        top: 1.7rem;
+      }
+
+      &::-moz-range-thumb {
+        transform: scale(1.1);
+        top: 1.7rem;
+      }
+    }
+
+    
+  }
+
+  &__track-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  &__track{
+    background-color: $color-primary;
+    z-index: 100;
+    height: 100%;
+    // width: 50%;
+    position: relative;
+  }
+
+  // background-image: linear-gradient(to right, $color-primary 70%, $color-primary-light 30%);
+  // width: 100%;
+  // height: 0.5rem;
+  // width: 21.5rem;
+  // position: relative;
+  // margin-bottom: 2.6rem;
+
+  // &::before,
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 2rem;
+  //   height: 2rem;
+  //   display: inline-block;
+  //   background-color: $color-primary;
+  //   -webkit-mask-image: url(../img/SVG/slider.svg);
+  //   -webkit-mask-size: contain;
+  //   -webkit-mask-position: center;
+  //   -webkit-mask-repeat: no-repeat;
+  // }
+
+  // &::before {
+  //   top: .5rem;
+  //   left: 30%;
+  // }
+
+  // &::after {
+  //   top: .5rem;
+  //   left: 64.5%;
+  // }
+}

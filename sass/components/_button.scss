@@ -1,0 +1,61 @@
+//functionality for playstore button
+// .menu-click:checked + .section-sidebar .btn-download{
+//  visibility: visible;
+//  opacity: 1;
+// }
+
+
+.btn {
+
+  &-primary {
+    color: #fff;
+    background-color: $color-primary;
+    padding: 1.3rem 0;
+    border-style: none;
+    font-size: 1.4rem;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 2.1rem;
+    cursor: pointer;
+    white-space: nowrap;
+    text-decoration: none;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-download {
+    @media only screen and (max-width: $bp-lg) {
+      visibility: hidden;
+      opacity: 0;
+      align-self: center;
+      
+      &--show{
+        visibility: visible;
+        opacity: 1;
+        // transform: translateY(-6rem);
+      }
+    }
+  }
+
+  
+  &-upload{
+    border: none;
+    padding: 1.6rem 2.5rem;
+    font-size: 1.4rem;
+    color: $color-primary;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.8rem;
+    cursor: pointer;
+    background-color: $color-primary-light;
+    white-space: nowrap;
+
+    &:focus{
+      outline: $color-primary solid 2px;
+    }
+}
+}
+

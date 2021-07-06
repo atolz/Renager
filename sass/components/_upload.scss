@@ -1,0 +1,47 @@
+.upload {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 1.8rem;
+  background-color: #fff;
+  border: $line-style-1;
+  border-radius: 0.5rem;
+  margin-bottom: .4rem;
+  position: relative;
+  // z-index: -10;
+
+  span {
+      font-size: 1.2rem !important;
+      font-weight: 700 !important;
+      color: $color-grey-light-2 !important;
+      line-height: 1.5rem;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      // content: "Drag & Drop images Here";
+
+      @media only screen and (max-width: $bp-slg){
+          // content: "No file selected";
+      }
+
+    }
+  
+
+  input{
+    //width and height for drag and drop
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    &:focus,
+    &:active{
+      border: none;
+      background-color: #fff;
+      outline: none;
+    }
+  }
+}

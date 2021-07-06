@@ -1,0 +1,117 @@
+.footer {
+  background-color: $color-primary-light;
+  // z-index: 100;
+  padding: 10.6rem 10vw 3.1rem 10vw;
+  position: relative;
+
+  
+  @media only screen and (max-width: $bp-save){
+    padding: 5.6rem 10vw 3.1rem 10vw;
+  }
+
+  &__renager{
+    margin-bottom: 3.8rem;
+    font-size: 2.4rem;
+  }
+
+  &__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21.8rem, 1fr));
+    grid-gap: 1.8rem;
+    grid-row-gap: 4rem;
+    margin-bottom: 8rem;
+  }
+
+  &__heading{
+    display: none;
+    @media only screen and (max-width: $bp-save){
+     display: block;
+    }
+  }
+
+  &__contact {
+    // background-color: salmon;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__address{
+    margin-bottom: 1.1rem;
+  }
+
+  &__support{
+    margin-bottom: 2.4rem;
+  }
+
+  &__social {
+    display: flex;
+  }
+
+  &__icon {
+    width: 1.9rem;
+    height: 1.9rem;
+    &:not(:last-child){
+      margin-right: 1.6rem;
+    }
+  }
+
+  &__info {
+    // background-color: slategray;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: $color-secondary;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.4rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__actions{
+      // background-color: yellow;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__more {
+    // background-color: springgreen;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__googleplay {
+    // background-color: teal;
+    // align-self: center;   
+    @media only screen and (max-width: $bp-save){
+      justify-self: center;
+      grid-column: 1/span 2;
+    }
+  }
+
+  &__download{
+      display: grid;
+      // flex-direction: column;
+      align-content: start;
+      gap: 1.6rem;
+
+      @media only screen and (max-width: $bp-save){
+        align-content: center;
+      }
+
+  }
+
+  &__copyright {
+    // background-color: indianred;
+    color: white;
+    @media only screen and (max-width: $bp-save){
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,84 @@
+.search {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-right: 12rem;
+
+  @media only screen and (max-width: $bp-lg-1) {
+    padding-right: 6rem;
+  }
+
+  @media only screen and (max-width: $bp-save) {
+    padding-right: 1.5rem;
+  }
+
+  &__input {
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    padding-left: 10rem;
+    border: 1.8px solid transparent;
+    width: 50rem;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow-dark;
+    z-index: 1;
+    position: relative;
+    // transition: .2s transform;
+    backface-visibility: hidden;
+    color: $color-secondary;
+    font-weight: 700;
+    text-decoration: none;
+
+    @media only screen and (max-width: $bp-save) {
+      width: 39rem;
+    }
+
+    @media only screen and (max-width: $bp-searchbar) {
+      width: 30rem;
+      padding-left: 6rem;
+    }
+    @media only screen and (max-width: $bp-phone-2) {
+      width: 26rem;
+      padding-left: 4.8rem;
+    }
+
+    &:focus {
+      border: 1.8px solid $color-primary;
+      outline: none;
+      // transform: scaleY(1.01);
+      // -webkit-transform: scaleY(1.01);
+      backface-visibility: hidden;
+    }
+
+    &::-webkit-input-placeholder {
+      font-family: inherit;
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+  }
+
+  &__button {
+    position: relative;
+    border-radius: 0;
+    border: none;
+    background-color: white;
+    margin-right: -5rem;
+    z-index: 10;
+
+    @media only screen and (max-width: $bp-grid) {
+      margin-left: 3rem;
+    }
+
+    @media only screen and (max-width: $bp-searchbar) {
+      margin-left: 1.6rem;
+      margin-right: -3.5rem;
+    }
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: none;
+    stroke: $color-primary;
+  }
+}
